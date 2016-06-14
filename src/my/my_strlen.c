@@ -9,9 +9,15 @@
 */
 
 #include <stdio.h>
-#include <string.h>
 
-size_t	my_strlen(char *str)
+int     my_strlen(char *str)
 {
-  return (strlen(str));
+  int x;
+
+  x = 0;
+  if (str == NULL)
+    return (x);
+  while (str[x] != '\0')
+    x++;
+  return (x);
 }
