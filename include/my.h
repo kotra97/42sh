@@ -11,8 +11,6 @@
 #ifndef MY_H_
 # define MY_H_
 
-# include <string.h>
-
 char    *my_strcat_real(char *src_1, char *src_2);
 char    *my_strdup(char *tmp);
 void	my_putarray(char **array);
@@ -27,7 +25,7 @@ int	my_isneg(int nb);
 void	my_put_nbr(int nb);
 int	my_swap(int *a, int *b);
 void	my_putstr(char *str);
-size_t	my_strlen(char *str);
+int	my_strlen(char *str);
 int	my_getnbr(char *str);
 void	my_sort_int_tab(int *tab, int size);
 int	my_power_rec(int nb, int power);
